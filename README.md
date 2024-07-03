@@ -17,7 +17,7 @@ https://github.com/Avinash4231/Simple-Inventory-Tracker-using-spring-boot/assets
 ## Requirements
 - **Programming Language**: Java
 - **Framework**: Spring Boot
-- **Database**: H2 Database
+- **Database**: MySQL Database
 - **User Interface**: Swagger-UI for API documentation and interaction
 
 ## Getting Started
@@ -46,10 +46,7 @@ https://github.com/Avinash4231/Simple-Inventory-Tracker-using-spring-boot/assets
 
 4. **Access the application**:
     - Swagger UI: `http://localhost:8080/swagger-ui.html`
-    - H2 Console: `http://localhost:8080/h2-console`
-      - **JDBC URL**: `jdbc:h2:mem:inventorydb`
-      - **Username**: `sa`
-      - **Password**: *(leave blank)*
+    
 
 ## API Endpoints
 
@@ -84,14 +81,12 @@ https://github.com/Avinash4231/Simple-Inventory-Tracker-using-spring-boot/assets
 
 ## Database Configuration
 
-The application uses an H2 in-memory database. The configuration is specified in `src/main/resources/application.properties`:
+The application uses an MySQL in-memory database. The configuration is specified in `src/main/resources/application.properties`:
 
 ```properties
-spring.datasource.url=jdbc:h2:mem:inventorydb;DB_CLOSE_DELAY=-1
-spring.datasource.driver-class-name=org.h2.Driver
-spring.datasource.username=sa
-spring.datasource.password=
-spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
-spring.jpa.hibernate.ddl-auto=update
-spring.h2.console.enabled=true
-spring.h2.console.path=/h2-console
+spring.datasource.url=jdbc:mysql://localhost:3306/avidb
+spring.datasource.username=root
+spring.datasource.password=Anynomous
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.jpa.properties.hibernate.dialect=org.hibernate.dialect.MySQL8Dialect
+spring.jpa.hibernate.ddl-auto=update 
