@@ -3,8 +3,9 @@
 ## Project Description
 The Simple Inventory Tracker is a basic application built using Spring Boot that allows users to manage a small set of products. The system includes features such as adding and displaying products, searching for products by name, and displaying products that need restocking (quantity below a specified threshold).
 
-Demo
-https://github.com/Avinash4231/Simple-Inventory-Tracker-using-spring-boot/assets/119235391/2bdf5933-5865-45c8-b80b-cc4b2f22b540
+## Demo
+https://github.com/Avinash4231/Simple-Inventory-Tracker-using-spring-boot/assets/119235391/5da058b4-1ce8-4133-86cb-f7011fe46bb4
+
 
 
 ## Features
